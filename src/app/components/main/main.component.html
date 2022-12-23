@@ -1,0 +1,208 @@
+<div class="container">
+    <div class="row">
+      <!--Container: About me, experience...-->
+      <div class="col-md-9 mt-4 mb-2">
+  
+        <div class="row rtl">
+          <h1 class="app-primary-bold-color">Manish</h1>
+        </div>
+  
+        <!--Objective-->
+        <div>
+          <h2 class="app-primary-bold-color about-me mt-4">Objective</h2>
+          <hr class="default-separator">
+        </div>
+  
+        <div class="rtl-about-me">
+          <p>
+            Innovative Front End Developer with 6 Months experience (5 months as a Trainee) seeking challenging
+            opportunities Where I can fully
+            use my skills and learn new as well for the success of myself and the organization.
+          </p>
+        </div>
+  
+        <!--Studies-->
+        <div>
+          <h2 class="app-primary-bold-color studies mt-4">Studies</h2>
+          <hr class="default-separator">
+        </div>
+  
+        <div class="rtl-studies">
+          <li><b>Bachelor's of Computer Applications(BCA)<span style="float:right">59%</span></b>
+            <p style="margin-left:20px;">PC Training Institute, IGNOU, New Delhi.</p>
+          </li>
+          <li><b>Master's of Computer Applications(BCA)<span style="float:right">7.35(CGPA)</span></b>
+            <p style="margin-left:20px;">Galgotias University,Greater Noida, Uttar Pradesh.</p>
+          </li>
+        </div>
+  
+        <!--Experience-->
+        <div>
+          <h2 class="app-primary-bold-color experience mt-4">Expencience</h2>
+          <hr class="default-separator">
+        </div>
+  
+        <div class="rtl-experience">
+          <li>
+            Currently Working as an <b>Front End Developer</b> at <b>Procloudware Solutions Pvt. Ltd.</b>, Amritsar,
+            Punjab.
+            <b><span style="float:right">15/07/2022 - Present</span></b>
+          </li>
+        </div>
+  
+        <!-- Projects -->
+        <div>
+          <h2 class="app-primary-bold-color projects mt-4">Projects</h2>
+          <hr class="default-separator">
+        </div>
+  
+        <div class="rtl-studies">
+          <div>
+          <i class="pointer" [ngClass]="{'bi bi-caret-down-fill':showToDoList,'bi bi-caret-right-fill':!showToDoList}" (click)="show('showToDoList')"></i><b>To-Do-List Application:</b>
+          <div *ngIf="showToDoList">
+          <p>Here you can add the tasks you want to do by giving the input, Delete the created tasks, and edit the same
+              as well.</p>
+          <ul>
+            <li><b>Languages Used : </b>HTML5, CSS, JavaScript(DOM).</li>
+            <li><b>Tools Used : </b>Visual Studio Code, Bootstrap.</li>
+          </ul>
+        </div>
+      </div>
+        <div>
+          <i class="pointer" [ngClass]="{'bi bi-caret-down-fill':showGuitarStore,'bi bi-caret-right-fill':!showGuitarStore}" (click)="show('showGuitarStore')"></i><b>Guitar Store:</b>
+          <div *ngIf="showGuitarStore">
+          <p>It is a like an E-commerce Website where you have different types of Guitar's to choose from.You can buy any
+            Guitar by clicking on Buy Button and than filling your details.</p>
+          <ul>
+            <li><b>Languages Used : </b>HTML5, CSS, JavaScript(DOM).</li>
+            <li><b>Tools Used : </b>Visual Studio Code ,Bootstrap.</li>
+          </ul>
+        </div>
+      </div>
+        <div>
+          <i class="pointer" [ngClass]="{'bi bi-caret-down-fill':showTicTacToe,'bi bi-caret-right-fill':!showTicTacToe}" (click)="show('showTicTacToe')"></i><b>Tic-Tac-Toe Game:</b>
+          <div *ngIf="showTicTacToe">
+          <p>It's a two player game where you have to choose either 'O' or 'X' if you make a series horizontally or
+              vertically before the other player you will win and a Game restart button (so you can restart the game
+              again) and an alert will appear showing "Player 'O' or 'X' Won".</p>
+          <ul>
+            <li><b>Languages Used : </b>HTML5, CSS, JavaScript(DOM).</li>
+            <li><b>Tools Used : </b>Visual Studio Code, Bootstrap.</li>
+          </ul>
+  </div>
+  </div>
+  <div>
+          <i class="pointer" [ngClass]="{'bi bi-caret-down-fill':showAngularTutorial,'bi bi-caret-right-fill':!showAngularTutorial}" (click)="show('showAngularTutorial')"></i><b>Angular Tutorial:</b>
+          <div *ngIf="showAngularTutorial">  
+          <p>Here i used fake API (reqres) for Login ,if your name and ID matches the data got from API call, you gets
+              logged-in else an error message will appear and you will be prompted to Sign-up,after Signing-up your
+              details will get saved in an object got from API call and than you can login.
+              After login a tutorial page (like tutorials point or w3 School) will appear where on left side of page
+              logged-in user details will appear and below that you can see list of topics ,as you click on any topic it
+              will scroll to the content related to that and as you click on the content you can edit that and a redo and
+              save button will appear. So, that you can redo or save the changes you made(changes will get saved in
+              LocalStorage),or you simply can logout. </p>
+          <ul>
+            <li><b>Languages Used : </b>HTML5, CSS, JavaScript.</li>
+            <li><b>Framework Used : </b>Angular.</li>
+            <li><b>Tools Used : </b>Visual Studio Code, Bootstrap.</li>
+          </ul>
+  </div>
+  </div>
+  <div>
+            <i class="pointer" [ngClass]="{'bi bi-caret-down-fill':showCvAngular,'bi bi-caret-right-fill':!showCvAngular}" (click)="show('showCvAngular')"></i><b>CV-Angular:</b>
+          <div *ngIf="showCvAngular">  
+          <p>Here i created a CV-Project where you can see my Educational ,professional and other details.</p>
+          <ul>
+            <li><b>Languages Used : </b>HTML5, CSS, JavaScript.</li>
+            <li><b>Framework Used : </b>Angular.</li>
+            <li><b>Tools Used : </b>Visual Studio Code, Bootstrap.</li>
+          </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+  
+      <!--Container: Contact, techs...-->
+      <div class="col-md-3 mt-2 mb-2 sidebar-bg-color">
+  
+        <!--Image-->
+        <div>
+          <img src="./../assets/imgs/Screenshot_20221220_132015.png" height="250" width="250"
+            class="img-thumbnail mx-auto d-block" (click)="openModel()" matTooltip="Click Here">
+        </div>
+  
+        <!--Contact-->
+        <div class="mt-4">
+          <app-contact-list [showContact]="!showContact"></app-contact-list>
+        </div>
+  
+        <!--Other techs-->
+        <div (click)="show('otherTechs')">
+          <h2 class="app-secondary-bold-color pointer mt-2" matTooltip="Click Here">Skills</h2>
+          <hr class="secondary-separator">
+        </div>
+  
+        <div *ngIf="showOtherTechs">
+          <ul class="app-secondary-color">
+            <i class="pointer" [ngClass]="{'bi bi-caret-down-fill':showHrdSkills,'bi bi-caret-right-fill':!showHrdSkills}" (click)="show('showHrdSkills')"></i><b>Technical/Hard Skills:<br></b>
+            <ul *ngIf="showHrdSkills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Javascript</li>
+              <li>Angular</li>
+              <li>Python(Core)</li>
+              <li>SQL</li>
+            </ul>
+            <i class="pointer" [ngClass]="{'bi bi-caret-down-fill':showDevTools,'bi bi-caret-right-fill':!showDevTools}" (click)="show('showDevTools')"></i><b>Development Tools:<br></b>
+            <ul *ngIf="showDevTools">
+              <li>Visual Studio Code</li>
+              <li>Android Studio</li>
+              <li>Github</li>
+            </ul>
+            <i class="pointer" [ngClass]="{'bi bi-caret-down-fill':showSoftSkills,'bi bi-caret-right-fill':!showSoftSkills}" (click)="show('showSoftSkills')"></i><b>Soft Skills:<br></b>
+            <ul *ngIf="showSoftSkills">
+              <li>Communication Skills</li>
+              <li>Soft Skills</li>
+              <li>HarWorkng</li>
+              <li>Time Management</li>
+              <li>Team Work</li>
+              <li>Interpersonal Skills</li>
+            </ul>
+          </ul>
+        </div>
+  
+        <!--Languages-->
+        <div>
+          <h2 class="app-secondary-bold-color pointer mt-2" (click)="show('languages')" matTooltip="Click Here"
+            matTooltipPosition="below">
+            Languages</h2>
+          <hr class="secondary-separator">
+        </div>
+  
+        <div *ngIf="showLanguages">
+          <ul class="app-secondary-color">
+            <li>Hindi</li>
+            <li>English</li>
+            <li>Punjabi</li>
+          </ul>
+        </div>
+        <!-- Hobbies -->
+        <div>
+          <h2 class="app-secondary-bold-color pointer mt-2" (click)="show('hobbies')" matTooltip="Click Here"
+            matTooltipPosition="below">
+            Hobbies</h2>
+          <hr class="secondary-separator">
+        </div>
+        <div *ngIf="showHobbies">
+          <ul class="app-secondary-color">
+            <li>Internet Surfing</li>
+            <li>Listening Music</li>
+            <li>Cooking</li>
+            <li>Going for a Walk in evening.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

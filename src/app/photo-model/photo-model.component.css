@@ -1,0 +1,18 @@
+
+.close-Icon-Div{
+    position:fixed;
+    left:1050px;
+    top:60px;
+    background-color: rgb(101, 97, 97);
+    color:white;
+    border-radius:100%;
+    width:30px;
+    height:30px;
+    }
+    mat-icon{
+        margin-left:3px;
+        margin-top:2px;
+    }
+    img{
+        background:black;
+    }

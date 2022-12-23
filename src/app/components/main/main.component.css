@@ -1,0 +1,97 @@
+.app-primary-color{
+    color: #333f50
+  }
+  
+  .app-primary-bold-color{
+    color: #333f50;
+    font-weight: bold;
+  }
+  
+  .app-secondary-color{
+    color: white;
+  }
+  .app-secondary-bold-color{
+    color: white;
+    font-weight: bold;
+  }
+  .sidebar-bg-color{
+    background-color:#333f50;
+    border-radius:40px 0px 40px;
+  }
+  .default-separator{
+    height: 3px;
+    background-color: #333f50;
+    opacity: 100%;
+  }
+  
+  .secondary-separator{
+    height: 3px;
+    background-color: white;
+    opacity: 100%;
+  }
+  
+  .img-thumbnail{
+    box-shadow:5px 5px lightblue;
+    background:black;
+    cursor: pointer;
+  }
+  
+  .img-thumbnail:active,.img-thumbnail:hover{
+    box-shadow:0 0 30px lightskyblue;
+  }
+  
+  .img-thumbnail{
+    margin-top:10px;
+  }
+  
+  .rtl {
+    animation: move-name 1s linear;
+   }
+  
+   .about-me{
+    animation: move-name 3s linear;
+   }
+  
+   .studies{
+    animation: move-name 5s linear;
+   }
+  
+   .experience{
+    animation: move-name 6s linear;
+   }
+  
+   .projects{
+    animation: move-name 7s linear;
+   }
+  
+   @keyframes move-name {
+    0% {
+    transform: translateX(700px);
+    }
+    100% {
+    transform: translateX(40px);
+    }
+   }
+  
+  .rtl-about-me{
+    animation: move 2s linear;
+  } 
+  
+   .rtl-experience{
+    animation: move 3s linear;
+  } 
+  
+   .rtl-studies{
+    animation: move 4s linear;
+  } 
+  
+  @keyframes move {
+    0% {
+    margin-top:1000px;
+    }
+    100% {
+    margin-top:0px;
+    }
+   }
+   
+   
