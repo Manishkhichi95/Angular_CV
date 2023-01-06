@@ -1,5 +1,6 @@
 {
-  "MyCV": {
+  "data": {
+    "name":"Manish",
     "img": "../../assets/imgs/Screenshot_20221220_132015.png",
     "objective": "Innovative Front End Developer with 6 Months experience (5 months as a Trainee) seeking challenging opportunities Where I can fully use my skills and learn new as well for the success of myself and the organization.",
     "studies": {
@@ -54,7 +55,7 @@
     ],
     "contact": {
       "address": "Address : C-392, J.J.Colony, Inderpuri,New Delhi-110012",
-      "ph.no.": "+91-8851644352",
+      "ph_no": "+91-8851644352",
       "linkedIn": "https://www.linkedin.com/in/manish-khichi",
       "instagram": "manish.khichi.735",
       "facebook": "manish.khichi.737",

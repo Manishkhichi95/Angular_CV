@@ -4,7 +4,7 @@
       <div class="col-md-9 mt-4 mb-2">
   
         <div class="row rtl">
-          <h1 class="app-primary-bold-color">Manish</h1>
+          <h1 class="app-primary-bold-color">{{data.name}}</h1>
         </div>
   
         <!--Objective-->
@@ -15,9 +15,7 @@
   
         <div class="rtl-about-me">
           <p>
-            Innovative Front End Developer with 6 Months experience (5 months as a Trainee) seeking challenging
-            opportunities Where I can fully
-            use my skills and learn new as well for the success of myself and the organization.
+           {{data.objective}}
           </p>
         </div>
   
@@ -28,11 +26,11 @@
         </div>
   
         <div class="rtl-studies">
-          <li><b>Bachelor's of Computer Applications(BCA)<span style="float:right">59%</span></b>
-            <p style="margin-left:20px;">PC Training Institute, IGNOU, New Delhi.</p>
+          <li><b>{{data.studies.graduation.degree}}<span style="float:right">{{data.studies.graduation.percentage}}</span></b>
+            <p style="margin-left:20px;">{{data.studies.graduation.institute}}</p>
           </li>
-          <li><b>Master's of Computer Applications(BCA)<span style="float:right">7.35(CGPA)</span></b>
-            <p style="margin-left:20px;">Galgotias University,Greater Noida, Uttar Pradesh.</p>
+          <li><b>{{data.studies.postgraduation.degree}}<span style="float:right">{{data.studies.postgraduation.cgpa}}</span></b>
+            <p style="margin-left:20px;">{{data.studies.postgraduation.institute}}</p>
           </li>
         </div>
   
@@ -44,9 +42,8 @@
   
         <div class="rtl-experience">
           <li>
-            Currently Working as an <b>Front End Developer</b> at <b>Procloudware Solutions Pvt. Ltd.</b>, Amritsar,
-            Punjab.
-            <b><span style="float:right">15/07/2022 - Present</span></b>
+            {{data.experience.job}}
+            <b><span style="float:right">{{data.experience.period}}</span></b>
           </li>
         </div>
   
@@ -205,4 +202,4 @@
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->

@@ -1,21 +1,91 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-// import { Observable } from 'rxjs';
-// import { of } from 'rxjs';  
-// import { tap, filter } from 'rxjs/operators'; 
+
 @Injectable({
   providedIn: 'root'
 })
 export class DetailsService {
 response:any;
-public url='http://localhost:3000/MyCV'
+public url='http://localhost:3000/data';
   constructor(private http:HttpClient) {}
   getDetails(){
-    
-   this.http.get(this.url).subscribe((res)=>{
-    console.log("::::::::res",res)
-    this.response=res
-   })
-   return this.response;
+       return this.http.get(this.url)
    }
 }
+
+export interface details{
+[x: string]: any;
+  
+    data: {
+      name:string;
+      img: string;
+      objective: string;
+      studies: {
+        graduation: {
+          degree: string;
+          institute:string;
+          percentage:string;
+        },
+        postgraduation: {
+          degree: string;
+          institute: string;
+          cgpa: string;
+        }
+      },
+      experience: {
+        job: string;
+        period:string
+      },
+      projects: [
+        {
+          title: string;
+          description: string;
+          languages_used: string;
+          tools_used: string;
+        },
+        {
+          title: string;
+          description: string;
+          languages_used: string;
+          tools_used: string;
+        },
+        {
+          title:string;
+          description: string;
+          languages_used: string;
+          tools_used: string;
+        },
+        {
+          title: string;
+          description: string;           
+          languages_used: string;
+          framework_used: string;
+          tools_used: string;
+        },
+        {
+          title: string;
+          description: string;
+          languages_used: string;
+          framework_used: string;
+          tools_used: string;
+        }
+      ];
+      contact: {
+        address: string;
+        ph_no:string;
+        linkedIn: string;
+        instagram: string;
+        facebook: string;
+        mailId: string;
+      }
+      skills: {
+        hardSkills: [string];
+        devTools: [string];
+        softSkills: [string];
+      };
+      languages: [string];
+      hobbies: [string];
+    }
+  }
+
+

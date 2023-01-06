@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PhotoModelComponent } from 'src/app/photo-model/photo-model.component';
 import { MatDialog } from '@angular/material/dialog';
 import { DetailsService } from 'src/app/services/details.service';
-
+import { details } from 'src/app/services/details.service';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -12,7 +12,7 @@ export class MainComponent {
 
   showPhotoModel: boolean = false;
   showContact: boolean = true;
-  dialogRef: any;
+  dialogRef: {} = {};
   showOtherTechs: boolean = false;
   showLanguages: boolean = false;
   showHobbies: boolean = false;
@@ -24,9 +24,13 @@ export class MainComponent {
   showHrdSkills: boolean = false;
   showDevTools: boolean = false;
   showSoftSkills: boolean = false;
-
-  constructor(private detailService:DetailsService,private dialog: MatDialog) {
-  this.detailService.getDetails();
+  data!: details;
+  
+  constructor(private detailService: DetailsService, private dialog: MatDialog) {
+   this.detailService.getDetails().subscribe((res: any) => {
+      this. data = res;
+      console.log("data",this.data)
+    })
   }
 
   openModel() {
@@ -63,18 +67,17 @@ export class MainComponent {
       case 'showTicTacToe':
         this.showTicTacToe = !this.showTicTacToe;
         break;
-        case 'showHrdSkills':
-          this.showHrdSkills = !this.showHrdSkills;
-          break;
-        case 'showDevTools':
-          this.showDevTools = !this.showDevTools;
-          break;
-        case 'showSoftSkills':
-          this.showSoftSkills = !this.showSoftSkills;
-          
+      case 'showHrdSkills':
+        this.showHrdSkills = !this.showHrdSkills;
+        break;
+      case 'showDevTools':
+        this.showDevTools = !this.showDevTools;
+        break;
+      case 'showSoftSkills':
+        this.showSoftSkills = !this.showSoftSkills;
+
     }
 
   }
-
 
 }
